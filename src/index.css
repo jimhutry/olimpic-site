@@ -1,0 +1,92 @@
+
+body {
+    background-color:beige;
+}
+.updatelog {
+    position: absolute;
+    background-color: bisque;
+    width: 1342px;
+    height: fit-content;
+    margin-top: 105px;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 212, 159);
+}
+.updatelog h1 {
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: 100;
+}
+.update01 {
+    width: 1342px;
+    height: fit-content;
+    border: 2px solid black;
+}
+.update1 {
+    margin-left: 15px;
+    font-variant: small-caps;
+    font-weight: 100;
+}
+.update2 {
+    margin-left: 25px;
+    font:menu;
+    font-size: large;
+}
+.headr {
+    background-color: crimson;
+    width: 1342px;
+    height: 75px;
+    position: absolute;
+    border: 2.5px solid red;
+    border-radius:10px;
+}
+#menutab-0button {
+    position:absolute;
+    border: 2.5px black solid;
+    margin-top: 51px;
+    margin-left: 7px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-color: coral;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#menutab-1button {
+    position:absolute;
+    border: 2.5px black solid;
+    margin-top: 51px;
+    margin-left: 174px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-color: coral;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+#menutab-2button {
+    position:absolute;
+    border: 2.5px black solid;
+    margin-top: 51px;
+    margin-left: 472px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: coral;
+    
+}
+#menutab-3button {
+    position:absolute;
+    border: 2.5px black solid;
+    margin-top: 51px;
+    margin-left: 745px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-color: coral;
+    
+}
+.headr a {
+    text-decoration:none;
+    color:darkslategrey;
+}
