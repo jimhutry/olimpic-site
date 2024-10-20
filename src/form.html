@@ -8,14 +8,94 @@
 </head>
 <body>
     <div class = "headr">
-        <p id="menutab-0button"><a href = "index.html">Главная страница.</a></p>
-        <p id="menutab-1button"><a href = "form.html">Форма сбора персональных данных.</a></p>
-        <p id="menutab-2button"><a href = "index.html">Проверка персональных данных.</a></p>
-        <p id="menutab-3button"><a href = "index.html">⛭</a></p>
+        <p id="menutab-0button" class="based"><a href = "index.html">Главная страница.</a></p>
+        <p id="menutab-1button" class="highlighted"><a href = "form.html">Форма сбора персональных данных.</a></p>
+        <p id="menutab-2button" class="based"><a href = "index.html">Проверка персональных данных.</a></p>
+        <p id="menutab-3button" class="based"><a href = "create_form.html">⛭</a></p>
     </div>
     <div class="mainform">
-        <form>
+        <form id="mainformd">
+            <h4 class="label">Введите ваше имя</h4>
+            <input type="text" required pattern="^[А-Яа-яЁё\s]+$" maxlength="18">
+            <h4 class="label">Введите вашу фамилию</h4>
+            <input type="text" required pattern="^[А-Яа-яЁё\s]+$" maxlength="24">
+            <h4 class="label">Введите ваше отчетство (если имеется)</h4>
+            <input type="text" pattern="^[А-Яа-яЁё\s]+$">
+            <h4 class="label">Введите ваш номер телефона. (В формате 8-xxx-xxx-xx-xx)</h4>
+            <input type="tel" required pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+            <h4 class="label">Введите вашу электронную почту</h4>
+            <input type="email" required>
+            <h4 class="label">Документ, подтверждающий личность (паспорт, свидетельство о рождении)</h4>
+            <input required id="docs" type="file" accept="image/png, image/jpeg, image/jpg, image/jfif, image/bmp">
+            <h4 class="label">Серия и номер документа, подтверждающего личность</h4>
+            <input type="text" required pattern="[0-9]{4}" id="seria"> <input type="text" required>
+            <h4 class="label">Кем и когда был выдан документ, подтверждающий личность</h4>
+            <input type="text" required>
+            <h4 class="label">Номер СНИЛС</h4>
+            <input type="text" required>
+            <h4 class="label">Ваша дата рождения</h4>
+            <input type="date" required>
             
+            
+            <h4 class="label">Страна проживания.</h4>
+            <select name="" id="ctrs" class="choscls" required>
+                <option value=""></option>
+                <option value="" id="rf">Российская Федерация</option>
+            </select>
+            <h4 class="label" id="regs">Регион проживания</h4>
+            <select name="" id="" class="choscls">
+                <option value=""></option>
+            </select>
+            <h4 class="label">Полное название образовательного учреждения</h4>
+            <input type="text" name="" id="" required>
+            <h4 class="label">Класс, в котором вы обучаетесь</h4>
+            <select class = "choscls" required>
+                <option value=""></option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+            </select>
+            <h4 class="label">Класс, за который вы писали олимпиаду по экономике</h4>
+            <select class = "choscls" required>
+                <option value=""></option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+            </select>
+            <h4 class="label">Являетесь-ли вы победителем или призером заключительного этапа олимпиады по экономике в 2023/2024 году?</h4>
+            <select required class="choscls">
+                <option value="">Нет</option>
+                <option value="">Да</option>
+                
+            </select>
+            <h4 class="label">Выберите региональную площадку для прохождения второго тура (очного) первого отборочного этапа</h4>
+            <select class="choscls">
+                <option value=""></option>
+                <option value="">Остров буян</option>
+                <option value="">Тридевятое царство</option>
+                <option value="">Страна дураков</option>
+            </select>
+            <h4 class="label">Имеете-ли вы статус ОВЗ или инвалидности?</h4>
+            <select class="choscls">
+                <option value="">Нет</option>
+                <option value="">Да</option>
+                
+            </select>
+            <h4 class="label">Имеете-ли вы статус сироты?</h4>
+            <select class="choscls">
+                <option value="">Нет</option>
+                <option value="">Да</option>
+                
+            </select>
+            <h4 class="label">Согласны-ли вы на обработку персональных данных?</h4>
+            <h5 class="hint">Да</h2>
+            <input type="radio" name="" id="yespers" title="Да">
+            <br>
+            <button type="submit" id="submit">Отправка</button><button id="reset" type="reset">Очистить поля</button>
         </form>
     </div>
 </body>

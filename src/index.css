@@ -4,12 +4,14 @@ body {
 }
 .updatelog {
     position: absolute;
-    background-color: bisque;
-    width: 1342px;
+    background-color: rgb(255, 255, 179);
+    width: 95%;
     height: fit-content;
     margin-top: 105px;
     border-radius: 10px;
     border: 3px solid rgb(255, 212, 159);
+    margin-left: 2%;
+    margin-right: 7%;   
 }
 .updatelog h1 {
     text-align: center;
@@ -19,7 +21,7 @@ body {
 .update01 {
     width: 1342px;
     height: fit-content;
-    border: 2px solid black;
+    
 }
 .update1 {
     margin-left: 15px;
@@ -32,32 +34,46 @@ body {
     font-size: large;
 }
 .headr {
+    
     background-color: crimson;
-    width: 1342px;
-    height: 75px;
+    width: 95%;
+    height: 10.5%;
     position: absolute;
     border: 2.5px solid red;
     border-radius:10px;
+    margin-left: 2%;
+    margin-right: 7%;
+}
+.mainform {
+    margin-top: 7.5%;
+    border: 2px solid black;
+    width:55%;
+    height: fit-content;
+    position: absolute;
+    border-radius: 2%;
+    background-color: rgb(255, 255, 179);
+    margin-left: 25%;
+    margin-right: 25%;
+    
 }
 #menutab-0button {
     position:absolute;
     border: 2.5px black solid;
-    margin-top: 51px;
+    margin-top: 3%;
     margin-left: 7px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
-    background-color: coral;
     padding-left: 15px;
     padding-right: 15px;
 }
 #menutab-1button {
     position:absolute;
     border: 2.5px black solid;
-    margin-top: 51px;
+    margin-top: 3%;
     margin-left: 174px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
-    background-color: coral;
+    
     padding-left: 15px;
     padding-right: 15px;
     
@@ -65,28 +81,165 @@ body {
 #menutab-2button {
     position:absolute;
     border: 2.5px black solid;
-    margin-top: 51px;
+    margin-top: 3%;
     margin-left: 472px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: coral;
+    
     
 }
 #menutab-3button {
     position:absolute;
     border: 2.5px black solid;
-    margin-top: 51px;
+    margin-top: 3%;
     margin-left: 745px;
     padding-left: 15px;
     padding-right: 15px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
-    background-color: coral;
+    
     
 }
 .headr a {
     text-decoration:none;
     color:darkslategrey;
+}
+
+
+.highlighted {
+    background-color:rgb(255, 151, 113);
+}
+.based {
+    background-color: coral;
+}
+
+
+.mainform input {
+    margin-left: 17px;
+    margin-bottom: 5px;
+    outline-style:groove;
+    background-color: beige;
+    text-decoration: dashed;
+    font-weight: 600;
+}
+#docs {
+    outline-style:dotted
+}
+.mainform select {
+    outline-style:ridge;
+}
+.mainform input, .mainform input::before, .mainform input::after {
+    box-sizing: border-box;
+  }
+.mainform input:focus {
+    outline-width: 3px;
+    outline-color: black;
+    
+}
+#seria {
+    width: 7%;
+}
+.label {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgb(255, 175, 70);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+    width: fit-content;
+}
+.hint {
+    margin-left: 17px;
+    background-color: rgb(255, 212, 159);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    width: fit-content;
+}
+.choscls { 
+    margin-left: 2%;
+    background-color: white;
+    outline: 3px groove black;
+
+}
+#mainformd {
+    margin-bottom: 2%;
+}
+#yespers {
+    margin-left: 2.7%;
+    accent-color: black;
+    margin-bottom: 1%;
+}
+.mainform button {
+    margin-left: 4%;
+}
+
+.button {
+    background-color: burlywood;
+    width: 18%;
+    height: 15%;
+    position: absolute;
+    margin-left: 3%;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 0.1%;
+    font-weight: 200;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.button:hover {
+    animation: my-animation 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+    cursor:pointer;
+    user-select: none;
+    
+}
+.creating {
+    width: 17%;
+    height: 2.7%;
+    background-color: chocolate;
+    display:inline-table;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    border: 3px solid black;
+    visibility:hidden;
+}
+.creating:hover {
+    animation: my-animation2 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    user-select: none;
+}
+#questioncr {
+    margin-left: 3%;
+    border-radius: 15%;
+    
+}
+#labelcr {
+    margin-left: 2%;
+    border-radius: 15%;
+}
+@keyframes my-animation2 {
+    from {
+        background-color: chocolate;
+        font-weight:200;
+    }
+    
+    to {
+        background-color: rgb(255, 106, 0);
+        font-weight: 400;
+    }
+}
+@keyframes my-animation {
+    from {
+        background-color: burlywood;
+        font-weight:200;
+    }
+    
+    to {
+        background-color: rgb(255, 145, 0);
+        font-weight: 400;
+    }
 }
