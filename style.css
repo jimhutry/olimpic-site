@@ -1,0 +1,27 @@
+body{
+    background: hsla(0, 0%, 100%, 1);
+
+background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#C0C4FF", GradientType=1 );
+}
+
+.enter {
+
+
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-top: 20%;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 250%;
+    cursor: pointer;
+    user-select: none;
+}
+.g1 {
+    align-content: center;
+}
