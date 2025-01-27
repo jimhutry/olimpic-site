@@ -1,15 +1,25 @@
 body{
     background: hsla(0, 0%, 100%, 1);
 
-background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
+    background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
 
-background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
+    background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
+    animation: grad 1s ease infinite;
+    background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
 
-background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(236, 100%, 88%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#C0C4FF", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#C0C4FF", GradientType=1 );
 }
-
+@keyframes grad {
+    0% {
+		background-position: 50%
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .enter {
 
 
@@ -22,6 +32,20 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", en
     cursor: pointer;
     user-select: none;
 }
+.choosing {
+    opacity: 0;
+    pointer-events: none;
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-top: 10%;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 250%;
+    cursor:wait;
+    user-select: none;
+    
+}
 .g1 {
     align-content: center;
+    
 }
